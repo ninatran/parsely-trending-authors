@@ -1,0 +1,55 @@
+main{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 89px;
+}
+
+#main-header{
+    text-align: center;
+    margin: 26px 0px;
+}
+
+#title{
+    margin-bottom: .4em;
+}
+
+
+.author-listing header{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.metrics{
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: italic;
+    color: grey;
+}
+
+header h2{
+    font-size: 1.5em; 
+    margin: 0;
+    color: black;
+}
+
+.author-listing article{
+    display:flex;
+    align-content: flex-start;
+    margin-left: 30px;
+    width: 570px;
+    gap: 12px;
+}
+
+/* .author-listing header h2{
+    display: none;
+} */
+
+/* .article-info{
+    margin-left: 12px;
+} */
+
+.article-info h1{
+    font-size: 1.25rem;
+    margin-top: 0;
+}
