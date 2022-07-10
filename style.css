@@ -10,8 +10,16 @@ header h2{
     color: black;
 }
 
+header p{
+    font-style: italic;
+}
+
+header p strong{
+    text-decoration: underline;
+}
+
 .metrics{
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
     font-style: italic;
     color: grey;
@@ -24,6 +32,11 @@ header h2{
 
 #title{
     margin-bottom: .4em;
+}
+
+#results-container header h2{
+    font-size: 1rem;
+    color:black;
 }
 
 .author-listing header{

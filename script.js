@@ -65,7 +65,7 @@ function display(articleDetails, authorDetails){
         const content = `<section class="author-listing">
             <header>
                 <h1>${i+1}. ${articleDetails[i].author}</h1>
-                <h2 class="metrics">${authorDetails[i].social_interactions} interactions</h2>
+                <h2 class="metrics">${authorDetails[i].social_interactions} SI</h2>
             </header>
             <article>
                 <img src="${articleDetails[i].image_url}">
