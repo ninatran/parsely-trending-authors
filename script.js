@@ -58,15 +58,25 @@ fetch(top_authors_endpoint)
 
 // Populates HTML page with data from API
 function display(articleDetails, authorDetails){
+    const container = document.querySelector('#results-container');
     
     for(let i = 0; i < articleDetails.length; i++){
-        document.querySelector(`#section-${i+1} header h1`).textContent = `${i+1}. ` + articleDetails[i].author;
-        document.querySelector(`#section-${i+1} .metrics`).textContent = `${authorDetails[i].social_interactions} social interactions`
-        document.querySelector(`#section-${i+1} article img`).setAttribute('src', articleDetails[i].image_url);
-        document.querySelector(`#section-${i+1} .article-info h1 a`).setAttribute('href', articleDetails[i].link);
-        document.querySelector(`#section-${i+1} .article-info h1 a`).setAttribute('target', '_blank');
-        document.querySelector(`#section-${i+1} .article-info h1 a`).textContent = articleDetails[i].title;
-        document.querySelector(`#section-${i+1} .article-info .metrics`).textContent = `${articleDetails[i].metrics.fb_referrals} referrals from Facebook`;
+        
+        const content = `<section class="author-listing">
+            <header>
+                <h1>${i+1}. ${articleDetails[i].author}</h1>
+                <h2 class="metrics">${authorDetails[i].social_interactions} interactions</h2>
+            </header>
+            <article>
+                <img src="${articleDetails[i].image_url}">
+                <div class="article-info">
+                    <h1><a href="${articleDetails[i].link}">${articleDetails[i].title}</a></h1>
+                    <h2 class="metrics">${articleDetails[i].metrics.fb_referrals} referrals from Facebook</h2>
+                </div>
+            </article>
+        </section>`;
+        
+        container.insertAdjacentHTML('beforeend', content);
     }
 
 }

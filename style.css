@@ -4,20 +4,10 @@ main{
     margin-bottom: 89px;
 }
 
-#main-header{
-    text-align: center;
-    margin: 26px 0px;
-}
-
-#title{
-    margin-bottom: .4em;
-}
-
-
-.author-listing header{
-    display:flex;
-    align-items: baseline;
-    justify-content: space-between;
+header h2{
+    font-size: 1.5em; 
+    margin: 0;
+    color: black;
 }
 
 .metrics{
@@ -27,10 +17,23 @@ main{
     color: grey;
 }
 
-header h2{
-    font-size: 1.5em; 
-    margin: 0;
-    color: black;
+#main-header{
+    text-align: center;
+    margin: 26px 0px;
+}
+
+#title{
+    margin-bottom: .4em;
+}
+
+.author-listing header{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.author-listing article img{
+    width: 200px;
 }
 
 .author-listing article{
@@ -41,15 +44,11 @@ header h2{
     gap: 12px;
 }
 
-/* .author-listing header h2{
-    display: none;
-} */
-
-/* .article-info{
-    margin-left: 12px;
-} */
-
 .article-info h1{
     font-size: 1.25rem;
     margin-top: 0;
+}
+
+.article-info img{
+    width: 125px;
 }
