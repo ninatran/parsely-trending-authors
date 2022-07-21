@@ -71,3 +71,41 @@ header p strong{
 .article-info img{
     width: 125px;
 }
+
+@media screen and (max-width: 600px){
+    main{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .article-info{
+        width: 95%;
+    }
+
+    .author-listing header{
+        margin-bottom: 12px;
+    }
+
+    .author-listing header h1{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .author-listing header .metrics{
+        font-size: 14px;
+    }
+
+    .author-listing article{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .author-listing article img{
+        width: 100%; 
+
+    }
+}
