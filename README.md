@@ -6,8 +6,7 @@ Proof of concept for a module that leverages the [Parse.ly API](https://www.pars
 ## How to view results
 Visit [https://parsely-trending-authors.glitch.me/](https://parsely-trending-authors.glitch.me/)
 
-OR
-
+### To view results in your local environment
 1. Clone the git repository to your local environment
 2. Create an `.env` file containing your `API_KEY` and `SECRET`
 3. Run `npm init`
