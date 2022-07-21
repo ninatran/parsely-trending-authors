@@ -1,3 +1,5 @@
 .DS_Store
-credentials.js
+.env
+node_modules/
 work-log.txt
+script-deprec.js
